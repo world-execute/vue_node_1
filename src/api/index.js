@@ -4,6 +4,8 @@ import http from "@/utils/request";
 export const getDate = ()=>{
    return  http.get('/api/home/getData')
 }
+
+// 请求用户信息
 export const getUserData = ()=>{
    return http.get('/api/home/getUserData')
 }
