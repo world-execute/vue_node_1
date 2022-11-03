@@ -10,7 +10,7 @@ export const getUserData = ()=>{
    return http.get('/api/home/getUserData')
 }
 
-// 提交
+// 获取视频数据
 export const getVideoData = ()=>{
    return http.get('/api/home/getVideoData')
 }
