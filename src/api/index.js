@@ -15,6 +15,7 @@ export const getVideoData = ()=>{
    return http.get('/api/home/getVideoData')
 }
 
+// 获取菜单信息
 export const getMenuData = (data)=>{
    return http.post('/api/menu',data)
 }
