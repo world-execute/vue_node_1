@@ -2,6 +2,7 @@ const userInfo = require('../schema/userInfo')
 const jwt = require('jsonwebtoken')
 const config = require('../config')
 
+// POST api/user/loginUser
 exports.loginUser = (req,res)=>{
     const name = req.body.name
     userInfo.findOne({name}).then(value => {

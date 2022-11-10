@@ -13,8 +13,8 @@ export const getUserInfo = (params)=>{
 }
 
 // 修改用户信息
-export const editUser =(data,params)=>{
-    return http.post(`/api/user/editUser/${params}`,data)
+export const editUser =(data,id)=>{
+    return http.post(`/api/user/editUser/${id}`,data)
 }
 
 // 删除用户

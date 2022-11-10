@@ -9,6 +9,7 @@ const userRouter = require('./router/user')
 const menuRouter = require('./router/menu')
 const joi = require('joi')
 
+// 连接MongoDB数据库
 mongoose.connect(mongodbURl)
     .then(()=>{
         console.log('Mongodb is connected')
@@ -19,6 +20,8 @@ mongoose.connect(mongodbURl)
 app.use(express.json())
 app.use(express.urlencoded({extended:false}))
 app.use(cors())
+
+// 路由
 app.use('/api/home',homeRouter)
 app.use('/api/user',userRouter)
 app.use('/api/menu',menuRouter)
