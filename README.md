@@ -1,9 +1,9 @@
 # 基于Vue 2的通用后台管理系统
 
 ---
-## 说明
-项目来源互联网教程,属于基本的管理系统教程,教程来源bilibili网站视频连接[点我](https://www.bilibili.com/video/BV1QU4y1E7qo)  
-特别鸣谢bilibili的up主[Allen前端分享](https://space.bilibili.com/1643315584) 上传该教程相关视频,已经一键三连了
+## 说明  
+> 项目来源互联网教程,属于基本的管理系统教程,教程来源bilibili网站视频连接[点我](https://www.bilibili.com/video/BV1QU4y1E7qo)  
+> 特别鸣谢bilibili的up主[Allen前端分享](https://space.bilibili.com/1643315584) 上传该教程相关视频,已经一键三连了
 ---
 ## 简介
 ### 技术栈
