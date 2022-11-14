@@ -81,7 +81,7 @@ export default new Vuex.Store({
         }
       })
       // 动态添加
-      // TODO 无法添加动态路由
+      // TODO 无法添加动态路由,添加后无法跳转,getRouter()返回显示已添加
       const routerArray = []
       console.log(menuArray)
       menuArray.forEach(item =>{

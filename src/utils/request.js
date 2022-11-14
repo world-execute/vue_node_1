@@ -1,5 +1,5 @@
 import axios from "axios";
-import {Loading,Message} from 'element-ui'
+import {Loading} from 'element-ui'
 
 const http = axios.create({
     baseURL: 'http://localhost:5000',
@@ -22,7 +22,7 @@ function endLoading(){
 // 添加请求拦截器
 http.interceptors.request.use(function (config) {
     // 在发送请求之前做些什么
-    startLoading()
+    startLoading() // element启动加载服务
     return config;
 }, function (error) {
     // 对请求错误做些什么
