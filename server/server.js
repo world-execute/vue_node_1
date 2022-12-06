@@ -3,17 +3,27 @@ const app = express()
 const port = 5000
 const cors = require('cors')
 const homeRouter = require('./router/home')
-const mongodbURl = 'mongodb://127.0.0.1:27017/test'
 const {mongoose} = require('mongoose')
 const userRouter = require('./router/user')
 const menuRouter = require('./router/menu')
 const joi = require('joi')
-
-// 连接MongoDB数据库
-mongoose.connect(mongodbURl)
-    .then(()=>{
-        console.log('Mongodb is connected')
-    }).catch((err)=>{
+const db_info = {
+    host:'127.0.0.1',
+    port:'27017',
+    db:'demo1'
+}
+const db_config = {
+    // poolSize:5,
+    auth:{
+        username:'admin',
+        password:'622821'
+    }
+}
+// mongoose.Promise = global.Promise
+const url = `mongodb://${db_info.host}:${db_info.port}/${db_info.db}`
+mongoose.connect(url,db_config).then(() => {
+    console.log('mongodb is connection')
+}).catch((err) => {
     console.log(err)
 })
 
