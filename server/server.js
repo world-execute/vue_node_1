@@ -50,5 +50,5 @@ app.use((err,req, res, next) =>{
 } )
 
 app.listen(port,()=>{
-    console.log(`server running at http://localhost:${port}`)
+    console.log(`ApiServer running, Basis url: http://localhost:${port}`)
 })
